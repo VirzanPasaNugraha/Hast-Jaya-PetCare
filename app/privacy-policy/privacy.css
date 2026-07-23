@@ -1,10 +1,12 @@
 .privacy-page {
   padding: 60px 0 80px;
   min-height: 70vh;
+  overflow-x: hidden;
 }
 
 .privacy-container {
   max-width: 760px;
+  width: 100%;
 }
 
 .back-link {
@@ -19,6 +21,7 @@
   font-size: 2.2rem;
   color: var(--primary-dark);
   margin-bottom: 8px;
+  word-wrap: break-word;
 }
 
 .updated {
@@ -30,29 +33,77 @@
 .privacy-page h2 {
   font-size: 1.3rem;
   margin: 32px 0 12px;
+  word-wrap: break-word;
 }
 
 .privacy-page p {
   color: var(--text-light);
   margin-bottom: 12px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .privacy-page ul {
   margin: 0 0 16px 20px;
   color: var(--text-light);
+  padding: 0;
 }
 
 .privacy-page li {
   margin-bottom: 6px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .privacy-page a {
   color: var(--secondary);
   font-weight: 600;
+  word-break: break-word;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .privacy-page {
+    padding: 40px 0 56px;
+  }
+
+  .privacy-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-page h2 {
+    font-size: 1.15rem;
+    margin: 28px 0 10px;
+  }
+
+  .privacy-page p,
+  .privacy-page li {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
 }
 
 @media (max-width: 600px) {
   .privacy-page h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+
+  .updated {
+    font-size: 0.8rem;
+  }
+
+  .privacy-page ul {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .privacy-page h1 {
+    font-size: 1.3rem;
+  }
+
+  .back-link {
+    font-size: 0.85rem;
+    margin-bottom: 24px;
   }
 }
