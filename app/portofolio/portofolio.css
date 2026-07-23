@@ -1,0 +1,180 @@
+/* ===== PORTOFOLIO PAGE ===== */
+.hero-header {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 40px 0 80px;
+}
+
+.hero-header .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-header .container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hero-header .container:last-child {
+  border-bottom: none;
+}
+
+/* ===== FOTO PROFIL ===== */
+.hero-pic {
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid var(--white);
+  box-shadow: var(--shadow);
+}
+
+.hero-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.hero-pic img:hover {
+  transform: scale(1.08);
+}
+
+/* ===== TEKS PROFIL ===== */
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-text h5 {
+  font-size: 1.6rem;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.hero-text h5 span {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.hero-text p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 560px;
+}
+
+/* ===== TOMBOL CV & CONTACT ===== */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn.active:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn:not(.active):hover {
+  background: var(--bg-alt);
+}
+
+/* ===== SOSIAL MEDIA ===== */
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  transition: background 0.2s, color 0.2s;
+}
+
+.social a:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.social a i {
+  font-size: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .hero-header .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    padding: 32px 0;
+  }
+
+  .hero-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .btn-group,
+  .social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-text h5 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.82rem;
+  }
+}

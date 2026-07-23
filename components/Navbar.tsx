@@ -36,6 +36,7 @@ export default function Navbar() {
           <li><a onClick={() => navigateToSection("#service")}>Layanan</a></li>
           <li><a onClick={() => navigateToSection("#about-us")}>Tentang</a></li>
           <li><a onClick={() => navigateToSection("#product")}>Produk</a></li>
+          <li><Link target="_blank" href="/portofolio" onClick={() => setMenuOpen(false)}>Portofolio</Link></li>
           <li><a onClick={() => navigateToSection("#contact-container")}>Kontak</a></li>
           <li>
             <button
