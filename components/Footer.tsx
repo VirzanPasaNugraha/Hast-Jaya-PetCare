@@ -60,7 +60,7 @@ export default function Footer() {
           <div>
             <h5>Hash Jaya Pet Care Hub</h5>
             <a href="tel:+(62)821-2822-3596">+(62)821-2822-3596</a>
-            <p>Sumedang Selatan, Cipameungpeuk 45312</p>
+            <p>Sumedang Selatan, Cipameungpeuk 45315</p>
           </div>
         </div>
       </div>
