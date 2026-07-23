@@ -561,9 +561,10 @@ footer hr {
 
 .links ul {
   list-style: none;
-  gap: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 8px;
 }
-
 .links ul li a {
   font-size: 0.85rem;
   color: #9a9aa5;
